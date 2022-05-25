@@ -1,0 +1,111 @@
+.nav-desk {
+  display: none; }
+
+.nav-mobile {
+  height: 5rem;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('./background.jpg'); }
+  .nav-mobile img {
+    width: 3rem;
+    position: relative;
+    top: 3px; }
+  .nav-mobile .icon-cart {
+    color: rgba(250, 252, 251, 0.45);
+    font-size: 1.5rem; }
+  .nav-mobile .mainMenu {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    letter-spacing: 1px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    transition: transform 1s;
+    transform: translateY(-100%); }
+    .nav-mobile .mainMenu li a {
+      display: inline-block;
+      padding: 2rem 0;
+      font-size: 1.2rem;
+      color: rgba(250, 252, 251, 0.45); }
+    .nav-mobile .mainMenu li a:hover {
+      color: white;
+      transition: all 0.5s ease; }
+    .nav-mobile .mainMenu .closeMenu {
+      font-size: 2rem;
+      color: rgba(250, 252, 251, 0.45);
+      cursor: pointer;
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem; }
+  .nav-mobile .openMenu {
+    font-size: 2rem;
+    color: rgba(250, 252, 251, 0.45);
+    cursor: pointer;
+    transition: top 1s ease-in-out; }
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+  .nav-desk {
+    height: 5rem;
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('background.jpg'); }
+    .nav-desk img {
+      width: 3rem;
+      position: relative;
+      top: 3px; }
+    .nav-desk ul {
+      display: flex; }
+      .nav-desk ul li a {
+        color: rgba(250, 252, 251, 0.45);
+        margin-right: 10px;
+        font-size: 1.2rem; }
+      .nav-desk ul li a:hover {
+        color: white;
+        transition: all 0.5s ease; }
+    .nav-desk .icon-cart {
+      color: rgba(250, 252, 251, 0.45);
+      font-size: 1.5rem; }
+  .nav-mobile {
+    display: none; } }
+
+
+    .fullscreen {
+      position: relative;
+    }
+    .fullscreen canvas {
+      max-width: 100%;
+    }
+    .fullscreen .fs-button {
+      z-index: 10000;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 8px;
+      right: 0;
+      cursor: pointer;
+    }
+
+    .fullscreen .fs-button i{
+      color: #000;
+    }
+
+    #fullscreen:-webkit-full-screen {
+      background-image: url('./main-background.jpg');
+      width: 100%;
+    }
